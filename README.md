@@ -1,4 +1,4 @@
-#How to use
+# How to use
 
 npm run generate component *ComponentName*
 
