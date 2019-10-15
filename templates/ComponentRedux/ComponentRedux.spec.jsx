@@ -2,15 +2,15 @@
 
 import React from 'react'
 import { shallow } from 'enzyme'
-import { Unwrapped<%= name %> as <%= name %> } from './<%= name %>'
+import { Unwrapped<%= upCaseName %> as <%= upCaseName %> } from './<%= upCaseName %>'
 
 const mockedData = {
 
 }
 
-describe('<%= name %>', () => {
-  const component = shallow(<<%= name %> {...mockedData} />)
-  
+describe('<%= upCaseName %>', () => {
+  const component = shallow(<<%= upCaseName %> {...mockedData} />)
+
   test('renders correctly', () => {
     expect(component).toMatchSnapshot()
   })

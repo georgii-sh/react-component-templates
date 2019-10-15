@@ -2,20 +2,20 @@
 
 import React from 'react'
 
-import styles from './<%= name %>.scss'
+import styles from './<%= upCaseName %>.scss'
 
 type Props = {
 
 }
 
-class <%= name %> extends React.PureComponent<Props> {
+class <%= upCaseName %> extends React.PureComponent<Props> {
   render() {
     return (
-      <div className={styles.<%= name %>}>
-        Hi from <%= name %> !
+      <div className={styles.<%= lowCaseName %>}>
+        Hi from <%= upCaseName %> !
       </div>
     )
   }
 }
 
-export default <%= name %>
+export default <%= upCaseName %>

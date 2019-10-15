@@ -1,6 +1,6 @@
 # How to use
 
-npm run generate component *ComponentName*
+npm run generate *ComponentName*
 
-npm run generate generateRedux *ComponentName*
+npm run generateRedux *ComponentName*
 

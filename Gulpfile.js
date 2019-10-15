@@ -13,6 +13,7 @@ const paths = {
 
 const generate = type => {
   const cap = val => val.charAt(0).toUpperCase() + val.slice(1)
+  const low = val => val.charAt(0).toLowerCase() + val.slice(1)
 
   const { name } = yargs
   let parentPath = yargs.parent || ''
@@ -25,7 +26,8 @@ const generate = type => {
     .pipe(
       tpl({
         name,
-        upCaseName: cap(name)
+        upCaseName: cap(name),
+        lowCaseName: low(name)
       })
     )
     .pipe(

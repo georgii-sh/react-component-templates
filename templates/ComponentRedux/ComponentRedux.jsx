@@ -3,17 +3,17 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import styles from './<%= name %>.scss'
+import styles from './<%= upCaseName %>.scss'
 
 type Props = {
 
 }
 
-class <%= name %> extends React.PureComponent<Props> {
+class <%= upCaseName %> extends React.PureComponent<Props> {
   render() {
     return (
-      <div className={styles.<%= name %>}>
-        Hi from <%= name %> !
+      <div className={styles.<%= lowCaseName %>}>
+        Hi from <%= upCaseName %> !
       </div >
     )
   }
@@ -29,6 +29,6 @@ const mapStateToProps = state => ({
 
 })
 
-export const Unwrapped<%= name %> = <%= name %>
+export const Unwrapped<%= upCaseName %> = <%= upCaseName %>
 
-export default connect(mapStateToProps, mapDispatchToProps)(<%= name %>)
+export default connect(mapStateToProps, mapDispatchToProps)(<%= upCaseName %>)
