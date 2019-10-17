@@ -22,7 +22,7 @@ const generate = type => {
   }
   const destPath = path.join(path.join('src', parentPath), name)
   return gulp
-    .src(type === 'componentRedux' ? paths.blankComponentReduxTemplate : paths.blankComponentTemplate)
+    .src(type === 'ComponentRedux' ? paths.blankComponentReduxTemplate : paths.blankComponentTemplate)
     .pipe(
       tpl({
         name,
